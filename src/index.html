@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-animation-container">
+        <div class="main-animation__title main-animation__title--first">
+          Ваше бухгалтерське ПЗ
+        </div>
+        <div class="main-animation__laptop" id="laptop"></div>
+        <div class="main-animation__line"></div>
+        <div class="main-animation__gear">
+          <div class="gear__text">API</div>
+          <div class="gear__img"></div>
+        </div>
+        <div class="main-animation__server" id="server"></div>
+        <div class="main-animation__title main-animation__title--last">
+          Сервер Altbank
+        </div>
+      </div>
+    </div>
+    <div class="cursor-block"></div>
+
+    <script src="https:/cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.3/lottie.min.js"
+      integrity="sha512-35O/v2b9y+gtxy3HK+G3Ah60g1hGfrxv67nL6CJ/T56easDKE2TAukzxW+/WOLqyGE7cBg0FR2KhiTJYs+FKrw=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/cursor.js"></script>
+    <script src="./js/laptop-anim.js"></script>
+    <script src="./js/server-anim.js"></script>
+  </body>
+</html>
