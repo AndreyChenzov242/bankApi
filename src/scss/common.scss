@@ -47,6 +47,10 @@
     position: absolute;
     top: 38px;
     left: 45%;
+
+    @media screen and (max-width: $breakpoint-up-xxl) {
+      left: 50%;
+    }
   }
 
   &__title {
@@ -254,6 +258,10 @@
       line-height: 1.16;
       margin-bottom: 48px;
       position: relative;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
 
       &::before {
         display: block;
