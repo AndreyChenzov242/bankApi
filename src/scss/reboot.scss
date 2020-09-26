@@ -44,7 +44,7 @@ body {
   font-size: 1rem;
   width: 100vw;
   color: #fff;
-  background-color: #000728;
+  background-color: #fff;
   cursor: url(../assets/img/cursor.png), default;
 
   &.overflow-hidden {
@@ -74,7 +74,7 @@ a {
   background-color: transparent;
   text-decoration: none;
   outline: none !important;
-  cursor: pointer;
+  cursor: inherit;
   color: #000;
 
   &:visited,

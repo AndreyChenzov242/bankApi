@@ -8,6 +8,52 @@
   </head>
   <body>
     <div class="container">
+      <div class="section section--home">
+        <div class="slogan-wrapper">
+          <div class="title-wrapper">
+            <div class="title" id="title-scramb">
+              інтернет-банкінг через улюблені Бухгалтерські програми
+            </div>
+          </div>
+
+          <div class="subtitle">
+            API від Altbank — це програмний інтерфейс, що надає можливість
+            взаємодіяти з інтернет-банкінгом через звичні для вас бухгалтерські
+            програми.
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="list-wrapper">
+          <div class="title list__title">
+            <p>Через API від Altbank</p>
+            <p>ви зможете:</p>
+          </div>
+
+          <ol>
+            <li class="list__item">
+              Надсилати до банку платіжні документи (UAH), створені у вашій
+              бухгалтерській програмі
+            </li>
+            <li class="list__item">
+              Отримувати баланс поточних рахунків у всіх валютах
+            </li>
+            <li class="list__item">
+              Налаштувати автоматичне отримання виписок у вашій бухгалтерській
+              програмі
+            </li>
+            <li class="list__item">
+              Переглядати перелік транзакцій за поточний календарний день або за
+              один із семи попередніх днів
+            </li>
+            <li class="list__item">
+              Отримувати курси валют та котирування товарів
+            </li>
+          </ol>
+        </div>
+      </div>
+
       <div class="main-animation-container">
         <div class="main-animation__title main-animation__title--first">
           Ваше бухгалтерське ПЗ
@@ -24,6 +70,30 @@
         </div>
       </div>
     </div>
+
+    <aside class="social-and-logo">
+      <div class="social-and-logo__social-wrapper social-wrapper">
+        <a href="#" class="social-wrapper__item social-wrapper__item--first">
+          <svg class="svg">
+            <use xlink:href="./assets/svg/facebook.svg#facebook"></use>
+          </svg>
+        </a>
+        <a href="#" class="social-wrapper__item social-wrapper__item--second">
+          <svg class="svg">
+            <use xlink:href="./assets/svg/telegram.svg#telegram"></use>
+          </svg>
+        </a>
+        <a href="#" class="social-wrapper__item social-wrapper__item--third">
+          <svg class="svg">
+            <use xlink:href="./assets/svg/twitter.svg#twitter"></use>
+          </svg>
+        </a>
+      </div>
+      <a href="#" class="social-and-logo__logo-wrapper logo-wrapper">
+        <img src="./assets/img/logo.png" alt="logo" />
+      </a>
+    </aside>
+
     <div class="cursor-block"></div>
 
     <script src="https:/cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
@@ -35,5 +105,7 @@
     <script src="./js/cursor.js"></script>
     <script src="./js/laptop-anim.js"></script>
     <script src="./js/server-anim.js"></script>
+    <script src="./libs/scrambling-letters-master/dist/scrambler.umd.js"></script>
+    <script src="./js/scrambling.js"></script>
   </body>
 </html>

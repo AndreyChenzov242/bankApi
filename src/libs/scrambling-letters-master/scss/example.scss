@@ -1,0 +1,133 @@
+@import "grid";
+@import "buttons";
+
+$back: rgb(40, 40, 40);
+$text: #ffffff;
+$alttext: #3fc35e;
+$pink: #ed1cdc;
+$pink-dark: #790072;
+$blue: #bde1ff;
+$blue-dark: #0080e2;
+$blue-darker: #004097;
+
+html {
+	font-family: 'Inconsolata', monospace;
+	font-size: 10px;
+	background: $back;
+	color: $alttext;
+	letter-spacing: 2px;
+	-webkit-transition: all .1s linear;
+	-o-transition: all .1s linear;
+	transition: all .1s linear;
+	body {		
+    min-height: 100vh;
+    padding: 0;
+		margin: 0;
+	}
+	h1 {
+		margin: 30px auto;
+		font-size: 6rem;
+		color: $text;
+	}
+	h2 {
+		margin: 15px auto;
+		font-size: 4rem;
+		color: $text;
+	}
+	h3 {
+		margin: 15px auto;
+		font-size: 3rem;
+		color: $text;
+    text-decoration: underline;
+	}
+	h4 {
+		display: block;
+		margin: 15px auto;
+		font-size: 2.25rem;
+		color: $text;
+	}
+	h1 + h3 {
+		color: $alttext;
+    text-decoration: none;
+	}
+	p {
+		display: block;
+		margin: 20px auto;
+		font-size: 2rem;
+		line-height: 2.5rem;
+	}
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 5rem;
+		}
+		h2 {
+			font-size: 3.5rem;
+		}
+	}
+	ul {
+		padding-left: 20px;
+		li {
+			font-size: 2rem;	
+			line-height: 3.5rem;				
+		}
+	}
+	a {
+		color: $blue;
+		&:active, &:focus, &:visited {
+			color: $blue;
+		}
+		&.nondescript-link {
+			text-decoration: none;
+			color: #fff;
+		}
+	}
+	.why-scrambling{
+		p {
+			padding: 10px;
+			font-weight: 700;
+		}
+	}
+	.how-to {
+		.get-started, .options {
+			strong {
+				color: $text;
+			}
+		}
+		pre {
+				display: block;
+				background: black;
+				color: $blue;
+				font-size: 1.5rem;
+				line-height: 1.5;
+				padding: 10px;
+				span {
+						color: $blue;
+				}
+		}
+	}
+	footer {
+		p {
+			color: $text;
+			font-size: 1.8rem;
+		}
+	}
+
+	.text-center {
+		text-align: center;
+	}
+	.highlight {
+		color: $blue;
+	}
+
+	// styled background
+	.body-background {
+		background-color: #000000;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23000000' width='11' height='11'/%3E%3Crect fill='%23010001' x='10' width='11' height='11'/%3E%3Crect fill='%23020102' y='10' width='11' height='11'/%3E%3Crect fill='%23020104' x='20' width='11' height='11'/%3E%3Crect fill='%23030205' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%23040206' y='20' width='11' height='11'/%3E%3Crect fill='%23050207' x='30' width='11' height='11'/%3E%3Crect fill='%23060308' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%2307030a' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%2307040b' y='30' width='11' height='11'/%3E%3Crect fill='%2308040c' x='40' width='11' height='11'/%3E%3Crect fill='%2309050d' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%230a050e' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%230b050f' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%230c0610' y='40' width='11' height='11'/%3E%3Crect fill='%230c0611' x='50' width='11' height='11'/%3E%3Crect fill='%230d0711' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%230e0712' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%230e0713' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%230f0814' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%23100815' y='50' width='11' height='11'/%3E%3Crect fill='%23100915' x='60' width='11' height='11'/%3E%3Crect fill='%23110916' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%23110917' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%23120a17' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%23130a18' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%23130b19' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%23140b19' x='70' width='11' height='11'/%3E%3Crect fill='%23140c1a' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23150c1a' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23150c1b' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23160d1c' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23160d1c' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23160d1d' x='80' width='11' height='11'/%3E%3Crect fill='%23170e1e' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23170e1e' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23180e1f' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23180f1f' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23180f20' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%23190f21' x='90' width='11' height='11'/%3E%3Crect fill='%23191021' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%23191022' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%231a1023' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%231a1123' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%231a1124' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%231b1125' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%231b1125' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%231b1226' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%231c1227' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%231c1227' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%231c1228' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%231d1229' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%231d1329' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%231e132a' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%231e132b' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%231e132b' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%231f132c' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%231f142d' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%2320142d' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%2320142e' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+		background-attachment: fixed;
+		background-size: cover;
+		@media (max-width: 1366px) {
+			background-position: center;
+		}
+	}
+	
+}
