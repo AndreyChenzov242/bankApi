@@ -1,0 +1,53 @@
+<h1>pinly.js</h1>
+<section>
+  <p>Try pin #1204 for <strong>Features List</strong>; Real world application: <a href="//becky-rich.co.uk">becky-rich.co.uk</a></p>
+</section>
+<div class="pin-login"></div>
+
+<!-- FEATURES -->
+<!-- TRY PIN NUMBER: 1204 for success -->
+
+<!--
+jQuery Plugin extension for a pin style entry.
+- Compatible with desktop & mobile devices
+- Call pinly.js as a jquery method e.g. $(this).pinly();
+- Number of inputs are configurable but pinly will default to 4 if unset
+- pinly only accepts numbers, using first the browser to configure a data input with a js fallback
+- pinly supports keyboard shortcuts: -
+--- TAB or Right Arrow moves to next input in the line
+--- SHIFT or Left Arrow moves to the previous input in the line
+--- UP increases the increment 
+--- DOWN decreases the increment
+--- BACKSPACE moves the previous input to allow for corrections, hitting backspace when all elements are highlighted will reset the form
+- pinly's behaviours, look and feel are 100% customisable using only CSS and minimal JS
+- pinly is Mobile friendly using the number pad on iOS devices while responsive CSS will fit pinly to your device
+- Define a CUSTOM CALLBACK FUNCTION to run when a pin has been entered
+--- Use jQuery's trigger method to fire the pinly custom events pinlySuccess & pinlyFail to define your prefered response for these actions
+-->
+
+<section class="description">
+  <h2>pinly - a jQuery Plugin extension for a numerical pin style entry.</h2>
+  <h3>Features of pinly:</h3>
+  <ol>
+    <li>Compatible with desktop & mobile devices</li>
+    <li>Call pinly.js as a jquery method e.g. <em>$( this ).pinly();</em></li>
+    <li>Number of inputs are configurable but pinly will default to 4 if unset</li>
+    <li>pinly only accepts numbers, using first the browser to configure a data input with a js fallback</li>
+    <li>pinly supports keyboard shortcuts: -
+      <ul>
+        <li><strong>TAB <em>or</em> RIGHT ARROW</strong> moves to next input in the line</li>
+        <li><strong>SHIFT <em>or</em> LEFT ARROW</strong> moves to the previous input in the line</li>
+        <li><strong>UP</strong> increases the increment</li>
+        <li><strong>DOWN</strong> decreases the increment</li>
+        <li><strong>BACKSPACE</strong> moves the previous input to allow for corrections, on submission fail hitting backspace will reset the form</li>
+      </ul>
+    </li>
+    <li>pinly's behaviours, look and feel are 100% customisable using only CSS and minimal js</li>
+    <li>pinly is Mobile friendly using the number pad on iOS devices while responsive CSS will fit pinly to your device</li>
+    <li>Define a <strong>Custom Callback method</strong> to run when a pin has been entered
+      <ul>
+        <li>Use jQuery's $.trigger method to fire the pinly custom events <em>pinlyPass</em> & <em>pinlyFail</em> to define your prefered response for these actions</li>  
+      </ul>
+    </li>
+  </ol>
+</section>

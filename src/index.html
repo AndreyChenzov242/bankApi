@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="/libs/pinly-master/jquery.pinly.css" />
     <title>Document</title>
   </head>
   <body>
@@ -80,6 +81,85 @@
       </div>
     </div>
 
+    <div class="section section--statement statement">
+      <div class="statement-wrapper">
+        <div class="deg">
+          <img src="./assets/img/deg.png" alt="deg" />
+        </div>
+        <div class="title">заява</div>
+        <form class="statement__form" action="#">
+          <div class="statement__label statement__label--bol mb-45">
+            на підключення інтерфейсу Client-Altbank API
+          </div>
+          <input
+            type="text"
+            class="statement__input"
+            placeholder="Назва компанії"
+          />
+          <div class="statement__label-and-input-wrapper">
+            <div class="statement__label">Код за ЄДРПОУ</div>
+            <div class="pin-login"></div>
+          </div>
+          <div class="statement__label statement__label--bol">
+            Доступ до Client-Altbank API здійснюється з переліку визначених
+            ІР-адрес компанії за логіном і паролем, що будуть надіслані банком
+            на електронну адресу контактної особи компанії по роботі з API.
+          </div>
+          <div class="statement__label">
+            Перелік ІР-адрес для доступу до Client-Altbank API:
+          </div>
+          <div class="ip-wrapper">
+            <div class="input-and-plus-wrapper">
+              <input
+                type="text"
+                class="statement__input"
+                placeholder="IPv4 або IPv6"
+                id="ip-input"
+                data-action="text"
+              />
+              <div class="add-ip ip-button">+</div>
+            </div>
+          </div>
+          <div class="statement__label mb-30">
+            Контактна особа з боку компанії по роботі з API:
+          </div>
+          <input
+            type="text"
+            class="statement__input mb-10"
+            placeholder="Прізвище, ім’я, по батькові"
+          />
+          <input
+            type="email"
+            class="statement__input"
+            placeholder="E-mail для передачі інформації по роботі з API"
+          />
+
+          <div class="statement__label-and-phone-wrapper">
+            <div class="statement__label">Телефон</div>
+            <div class="pin-phone"></div>
+          </div>
+
+          <input
+            type="submit"
+            class="statement__submit"
+            value="Зберегти в PDF"
+          />
+          <div class="statement__label statement__label--bol">
+            Заповнену заяву необхідно роздрукувати і надати до банку за підписом
+            та печаткою керівника компанії.
+          </div>
+        </form>
+      </div>
+      <footer class="footer">
+        <div class="footer__consult">Консультації за телефоном:</div>
+        <div class="footer__phone">0 800 211 111</div>
+        <div class="footer__cp">
+          © 2020 АТ «АЛЬТБАНК». Ліцензія НБУ №106 від 19.11.2018. Депозити,
+          кредити та інші види банківських послуг
+        </div>
+      </footer>
+    </div>
+
     <aside class="social-and-logo">
       <div class="social-and-logo__social-wrapper social-wrapper">
         <a href="#" class="social-wrapper__item social-wrapper__item--first">
@@ -116,5 +196,8 @@
     <script src="./js/server-anim.js"></script>
     <script src="./libs/scrambling-letters-master/dist/scrambler.umd.js"></script>
     <script src="./js/scrambling.js"></script>
+    <script src="./libs/pinly-master/script.js"></script>
+    <script src="./libs/pinly-master/phone.js"></script>
+    <script src="./js/addIp.js"></script>
   </body>
 </html>
