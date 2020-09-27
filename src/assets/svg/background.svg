@@ -1,0 +1,44 @@
+<svg version="1.1" id="background" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#0D1333;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<polygon class="st0" points="880.8,965.9 880.8,1087.9 616.7,1240.4 616.7,1118.4 "/>
+<polygon class="st0" points="669.5,722 669.5,844 405.4,996.4 405.4,1118.4 194.1,996.4 "/>
+<polyline class="st0" points="1937.2,234.2 1620.2,417 1620.2,661 1725.9,600 1937.2,722 "/>
+<polygon class="st0" points="458.2,478 458.2,600 352.6,539 352.6,417 563.9,295 563.9,417 "/>
+<polygon class="st0" points="880.7,478 880.7,356 1091.8,234.2 1091.8,417.1 1039.2,447.5 1039.2,569.5 "/>
+<polygon class="st0" points="1409,51.1 1197.7,173 1197.7,356 1250.5,325.5 1303.3,356 1303.3,234 1409,173 "/>
+<polygon class="st0" points="141.3,295 141.3,417 35.7,356 "/>
+<polygon class="st0" points="352.6,51.1 352.6,173 246.9,112.1 "/>
+<polygon class="st0" points="775.1,-70.9 775.1,51.1 669.5,-9.9 "/>
+<polygon class="st0" points="1567.4,508.5 1567.4,691.5 1356.1,813.5 1356.2,630.5 "/>
+<polygon class="st0" points="1303.3,722 1303.3,844.1 1144.9,935.4 1144.8,1118.5 1092,1087.9 1092,844 "/>
+<polyline class="st0" points="1356.2,1301.4 1356.2,1057.4 1937.2,722 "/>
+<polyline class="st0" points="1936.9,844.1 1620.2,1026.9 1620.2,1148.9 "/>
+<polyline class="st0" points="-17.2,630.5 246.9,478 246.9,600 -17.2,752.5 "/>
+<polyline class="st0" points="669.5,844 880.8,722 458.2,478 "/>
+<line class="st0" x1="458.2" y1="600" x2="669.5" y2="722"/>
+<line class="st0" x1="616.7" y1="1118.4" x2="405.4" y2="996.4"/>
+<polyline class="st0" points="1092,1087.9 986.4,1026.9 880.8,1087.9 "/>
+<polyline class="st0" points="1092,844 880.8,722 880.8,965.9 "/>
+<line class="st0" x1="1303.3" y1="234" x2="1620.2" y2="417"/>
+<line class="st0" x1="1567.4" y1="508.5" x2="1303.3" y2="356"/>
+<line class="st0" x1="1620.2" y1="1026.9" x2="1936.9" y2="1209.8"/>
+<line class="st0" x1="1356.1" y1="813.5" x2="1303.3" y2="844.1"/>
+<line class="st0" x1="1039.2" y1="447.5" x2="1356.2" y2="630.5"/>
+<line class="st0" x1="1303.3" y1="722" x2="1039.2" y2="569.5"/>
+<line class="st0" x1="563.9" y1="295" x2="352.6" y2="173"/>
+<polyline class="st0" points="880.7,478 669.5,356 563.9,417 "/>
+<line class="st0" x1="352.6" y1="51.1" x2="880.7" y2="356"/>
+<line class="st0" x1="246.9" y1="478" x2="141.3" y2="417"/>
+<line class="st0" x1="352.6" y1="539" x2="246.9" y2="600"/>
+<line class="st0" x1="141.3" y1="295" x2="352.6" y2="417"/>
+<polyline class="st0" points="1409,173 1620.2,51.1 1144.9,-223.4 "/>
+<line class="st0" x1="1197.7" y1="356" x2="1091.8" y2="417"/>
+<line class="st0" x1="775.1" y1="51.1" x2="1091.8" y2="234.2"/>
+<line class="st0" x1="1197.7" y1="173" x2="775.1" y2="-70.9"/>
+<line class="st0" x1="933.6" y1="-223.4" x2="1409" y2="51.1"/>
+<line class="st0" x1="1620.2" y1="661" x2="1567.4" y2="691.5"/>
+<line class="st0" x1="1356.2" y1="1057.4" x2="1144.9" y2="935.4"/>
+</svg>
