@@ -52,9 +52,9 @@ body {
   }
 }
 
-[tabindex="-1"]:focus:not(:focus-visible) {
-  outline: 0 !important;
-}
+// [tabindex="-1"]:focus:not(:focus-visible) {
+//   outline: 0 !important;
+// }
 
 h1,
 h2,
@@ -73,7 +73,7 @@ ul {
 a {
   background-color: transparent;
   text-decoration: none;
-  outline: none !important;
+  // outline: none !important;
   cursor: inherit;
   color: #000;
 
@@ -81,7 +81,7 @@ a {
   &:active,
   &:hover,
   &:link {
-    outline: none !important;
+    // outline: none !important;
   }
 
   &:hover {
@@ -101,7 +101,7 @@ a {
   }
 
   &:not([href]):not([tabindex]):focus {
-    outline: 0;
+    // outline: 0;
   }
 }
 
@@ -124,7 +124,7 @@ button {
 
   &:active,
   &:focus {
-    outline: none !important;
+    // outline: none !important;
   }
 }
 
@@ -162,7 +162,7 @@ textarea {
   margin: 0;
 
   &:focus {
-    outline: none;
+    // outline: none;
   }
 }
 
@@ -188,7 +188,7 @@ select {
 input,
 textarea,
 select {
-  outline: none !important;
+  // outline: none !important;
 }
 
 input[type="text"] {

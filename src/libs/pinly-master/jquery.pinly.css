@@ -20,7 +20,24 @@
   outline: none;
 }
 
+.pinly-points {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 3px;
+  background: #ECECEC;
+  border-radius: 100px;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+}
+
 .pinly-point:focus {
+  color: #000;
+  /* text-shadow: 0 0 0 #fff; */
+}
+
+.pinly-points:focus {
   color: #000;
   /* text-shadow: 0 0 0 #fff; */
 }
@@ -41,6 +58,14 @@
   text-align: center;
 }
 
+.pinly-points {
+  font-family: 'UI Bold';
+  font-weight: 600;
+  font-size: 28px;
+  overflow: hidden;
+  text-align: center;
+}
+
 /* Pinly responsive styles */
 
 @media screen and (max-width: 600px) {
@@ -53,6 +78,11 @@
     height: 150px;
     font-size: 7em;
   }
+  .pinly-points {
+    width: 150px;
+    height: 150px;
+    font-size: 7em;
+  }
 }
 
 /* ----------- iPhone 5 and 5S ----------- */
@@ -61,6 +91,11 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   .pinly-point {
+    width: 130px;
+    height: 130px;
+    font-size: 5em;
+  }
+  .pinly-points {
     width: 130px;
     height: 130px;
     font-size: 5em;

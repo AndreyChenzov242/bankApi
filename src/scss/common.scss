@@ -491,6 +491,10 @@
     font-family: "Fact Expanded", sans-serif;
     margin: 0 auto;
     margin-bottom: 55px;
+
+    &:focus {
+      border: 5px solid #000;
+    }
   }
 }
 

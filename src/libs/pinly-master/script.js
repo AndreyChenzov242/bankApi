@@ -1,6 +1,7 @@
 (function ($, window, document, undefined) {
   // --- BEGIN PLUGIN --- version 1.2
 
+  let flag2 = true;
   var // plugin name
     pluginName = "pinly",
     // key using in $.data()
@@ -72,10 +73,17 @@
       move = current_pos,
       num_points = e.length - 1;
 
+    let flag = false;
     // Determine direction
     if (direction === true) {
-      if (current_pos == num_points) move = 0;
-      else move++;
+      if (current_pos == num_points) {
+        flag = true;
+      } else if (flag2) {
+        console.log(flag2);
+        move = 0;
+        flag2 = false;
+        console.log("sdsd");
+      } else move++;
     } else if (direction === false) {
       if (e.is(":first")) move = num_points;
       else move--;
@@ -84,7 +92,10 @@
     }
 
     // Move to calculated position
-    e.eq(move).focus();
+    //$("#ip-input").focus();
+    if (!flag) {
+      e.eq(move).focus();
+    } else $("#ip-input").focus();
   };
 
   // Plugin settings/options
@@ -248,23 +259,5 @@
 // Call plugin instance
 $(".pin-login").pinly({
   num_inputs: 10,
-  on_pass_hide: 100,
-  login_success: function (pin) {
-    var t;
-
-    // do something
-    pin = parseInt(pin);
-
-    if (pin === 1204) {
-      $(".pin-login").trigger("pinlyPass");
-      $(".description").fadeIn(1400);
-    } else {
-      $(".pin-login").trigger("pinlyFail");
-      $(".pinly-wrap").addClass("shake");
-
-      t = setTimeout(function () {
-        $(".pinly-wrap").removeClass("shake");
-      }, 200);
-    }
-  },
+  on_pass_hide: 200,
 });

@@ -14,7 +14,7 @@
       '<input type="number" class="' +
         inputName +
         '" pattern="[0-9]*" value="3" min="0" max="9" alt="Your browser does not support javascript" data="' +
-        10 +
+        0 +
         '"  placeholder="3">'
     );
 
@@ -24,7 +24,7 @@
       '<input type="number" class="' +
         inputName +
         '" pattern="[0-9]*"  value="8" min="0" max="9" alt="Your browser does not support javascript" data="' +
-        11 +
+        1 +
         '"  placeholder="8">'
     );
 
@@ -34,13 +34,13 @@
       '<input type="number" class="' +
         inputName +
         '" pattern="[0-9]*"  value="0" min="0" max="9" alt="Your browser does not support javascript" data="' +
-        12 +
+        2 +
         '"  placeholder="0">'
     );
 
     obj.addClass("pinly-wrap").append(pinly_input);
 
-    for (i = 13; i < 22; i++) {
+    for (i = 3; i < 12; i++) {
       pinly_input = $(
         '<input type="number" class="' +
           inputName +
@@ -90,10 +90,13 @@
       move = current_pos,
       num_points = e.length - 1;
 
+    let flag = false;
+
     // Determine direction
     if (direction === true) {
-      if (current_pos == num_points) move = 0;
-      else move++;
+      if (current_pos == num_points) {
+        flag = true;
+      } else move++;
     } else if (direction === false) {
       if (e.is(":first")) move = num_points;
       else move--;
@@ -102,7 +105,9 @@
     }
 
     // Move to calculated position
-    e.eq(move).focus();
+    if (!flag) {
+      e.eq(move).focus();
+    } else $(".statement__submit").focus();
   };
 
   // Plugin settings/options
@@ -111,7 +116,7 @@
 
     this.options = {
       num_inputs: 12,
-      input_name: "pinly-point",
+      input_name: "pinly-points",
       highlight: "pinly-highlight",
       on_pass: "pinly-accepted",
       on_pass_hide: 600,
@@ -266,23 +271,5 @@
 // Call plugin instance
 $(".pin-phone").pinly({
   num_inputs: 12,
-  on_pass_hide: 100,
-  login_success: function (pin) {
-    var t;
-
-    // do something
-    pin = parseInt(pin);
-
-    if (pin === 1204) {
-      $(".pin-phone").trigger("pinlyPass");
-      $(".description").fadeIn(1400);
-    } else {
-      $(".pin-phone").trigger("pinlyFail");
-      $(".pinly-wrap").addClass("shake");
-
-      t = setTimeout(function () {
-        $(".pinly-wrap").removeClass("shake");
-      }, 200);
-    }
-  },
+  on_pass_hide: 300,
 });
