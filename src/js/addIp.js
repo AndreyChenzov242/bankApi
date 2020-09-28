@@ -33,7 +33,9 @@ $(document).on("input", "#main-input", function () {
       });
     }
 
-    document.querySelectorAll(".input-wrapper")[0].childNodes[1].focus();
+    let input = document.querySelectorAll(".input-wrapper")[0].childNodes[1];
+    input.focus();
+    input.selectionStart = input.value.length;
   }
 });
 
