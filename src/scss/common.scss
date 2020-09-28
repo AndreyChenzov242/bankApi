@@ -225,6 +225,7 @@
 .slogan-wrapper {
   width: 770px;
   margin-right: 90px;
+  margin-top: -38px;
 
   .title-wrapper {
     height: 280px;
@@ -552,6 +553,12 @@
     font-family: "Fact Expanded", sans-serif;
     font-size: 36px;
     margin-bottom: 30px;
+    display: block;
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+    }
   }
 
   &__cp {

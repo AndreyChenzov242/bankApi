@@ -1,6 +1,6 @@
 $(".add-ip").click(function () {
   $(".ip-wrapper").append(
-    "<input type='text' class='statement__input ip' placeholder='IPv4 або IPv6'/>"
+    "<div class='input-and-plus-wrapper'><input type='text' class='statement__input' placeholder='IPv4 або IPv6' id='ip-input' data-action='text' /><div class='add-ip ip-button'>-</div></div>"
   );
 });
 

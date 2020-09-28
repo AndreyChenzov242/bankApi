@@ -2,8 +2,8 @@ function ShowScramble() {
   setTimeout(() => {
     Scrambler({
       target: "#title-scramb",
-      random: [1000, 2000],
-      speed: 100,
+      random: [500, 700],
+      speed: 50,
       text: "Синхронізація платіжних доручень та виписок ",
       beforeEach: function () {
         $("#title-scramb").css({ "max-width": "100%" });
@@ -13,8 +13,8 @@ function ShowScramble() {
         setTimeout(() => {
           Scrambler({
             target: "#title-scramb",
-            random: [1000, 1500],
-            speed: 100,
+            random: [500, 700],
+            speed: 50,
             text: "Залишки на рахунках в режимі онлайн",
             beforeEach: function () {
               $("#title-scramb").css({ "max-width": 500 });
@@ -23,8 +23,8 @@ function ShowScramble() {
               setTimeout(() => {
                 Scrambler({
                   target: "#title-scramb",
-                  random: [1000, 2000],
-                  speed: 100,
+                  random: [500, 700],
+                  speed: 50,
                   text: "отримання Курсів валют і котирування товарів",
                   beforeEach: function () {
                     $("#title-scramb").css({ "max-width": "100%" });
@@ -33,8 +33,8 @@ function ShowScramble() {
                     setTimeout(() => {
                       Scrambler({
                         target: "#title-scramb",
-                        random: [1000, 1500],
-                        speed: 100,
+                        random: [500, 700],
+                        speed: 50,
                         text:
                           "інтернет-банкінг через улюблені Бухгалтерські програми",
                         beforeEach: function () {
