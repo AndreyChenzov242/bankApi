@@ -17,7 +17,7 @@
           inputName +
           '" pattern="[0-9]*" min="0" max="9" alt="Your browser does not support javascript" data="' +
           i +
-          '"  placeholder="0">'
+          '" >'
       );
 
       obj.addClass("pinly-wrap").append(pinly_input);

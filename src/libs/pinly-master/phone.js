@@ -11,7 +11,7 @@
     var pinly_input;
 
     pinly_input = $(
-      '<input type="number" class="' +
+      '<input type="number" class="pinly-points--grey ' +
         inputName +
         '" pattern="[0-9]*" value="3" min="0" max="9" alt="Your browser does not support javascript" data="' +
         0 +
@@ -21,7 +21,7 @@
     obj.addClass("pinly-wrap").append(pinly_input);
 
     pinly_input = $(
-      '<input type="number" class="' +
+      '<input type="number" class="pinly-points--grey ' +
         inputName +
         '" pattern="[0-9]*"  value="8" min="0" max="9" alt="Your browser does not support javascript" data="' +
         1 +
@@ -31,7 +31,7 @@
     obj.addClass("pinly-wrap").append(pinly_input);
 
     pinly_input = $(
-      '<input type="number" class="' +
+      '<input type="number" class="pinly-points--grey ' +
         inputName +
         '" pattern="[0-9]*"  value="0" min="0" max="9" alt="Your browser does not support javascript" data="' +
         2 +

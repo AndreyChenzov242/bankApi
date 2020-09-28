@@ -70,6 +70,7 @@
         <div class="main-animation__line"></div>
         <img class="money money--grn" src="./assets/img/grn.png" alt="grn" />
         <img class="money money--dol" src="./assets/img/dol.png" alt="dol" />
+        <img class="money money--eur" src="./assets/img/eur.png" alt="eur" />
         <div class="main-animation__gear">
           <div class="gear__text">API</div>
           <div class="gear__img"></div>
@@ -110,13 +111,20 @@
           </div>
           <div class="ip-wrapper">
             <div class="input-and-plus-wrapper">
-              <input
-                type="text"
-                class="statement__input"
-                placeholder="IPv4 або IPv6"
-                id="ip-input"
-                data-action="text"
-              />
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  class="statement__input"
+                  id="main-input"
+                  placeholder="IPv4 або IPv6"
+                  data-action="text"
+                />
+                <div class="main-close">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                </div>
+              </div>
+
               <div class="add-ip ip-button">+</div>
             </div>
           </div>
@@ -163,18 +171,18 @@
     <aside class="social-and-logo">
       <div class="social-and-logo__social-wrapper social-wrapper">
         <a href="#" class="social-wrapper__item social-wrapper__item--first">
-          <svg class="svg">
-            <use xlink:href="./assets/svg/facebook.svg#facebook"></use>
+          <svg class="svg svg--facebook">
+            <use xlink:href="./assets/svg/fcbk.svg#facebook"></use>
           </svg>
         </a>
         <a href="#" class="social-wrapper__item social-wrapper__item--second">
-          <svg class="svg">
-            <use xlink:href="./assets/svg/telegram.svg#telegram"></use>
+          <svg class="svg svg--telegram">
+            <use xlink:href="./assets/svg/tltgrm.svg#telegram"></use>
           </svg>
         </a>
         <a href="#" class="social-wrapper__item social-wrapper__item--third">
-          <svg class="svg">
-            <use xlink:href="./assets/svg/twitter.svg#twitter"></use>
+          <svg class="svg svg--twitter">
+            <use xlink:href="./assets/svg/twtr.svg#twitter"></use>
           </svg>
         </a>
       </div>
@@ -199,5 +207,6 @@
     <script src="./libs/pinly-master/script.js"></script>
     <script src="./libs/pinly-master/phone.js"></script>
     <script src="./js/addIp.js"></script>
+    <script src="./js/delIp.js"></script>
   </body>
 </html>
