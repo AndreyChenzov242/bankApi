@@ -70,7 +70,7 @@ a {
   background-color: transparent;
   text-decoration: none;
   // outline: none !important;
-  cursor: inherit;
+  cursor: pointer;
   color: #000;
 
   &:visited,
@@ -81,7 +81,6 @@ a {
   }
 
   &:hover {
-    text-decoration: underline;
     color: #000;
   }
 

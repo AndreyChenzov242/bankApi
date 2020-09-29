@@ -28,7 +28,7 @@
   }
 
   @media screen and (max-width: $breakpoint-up-xxxs) {
-    padding: 50px 60px 0 20px;
+    padding: 50px 50px 0 15px;
   }
 
   .main-bg-image {
@@ -127,6 +127,11 @@
       transform: translateX(calc(-50% + 25px));
       width: calc(100% + 50px);
     }
+
+    @media screen and (max-width: $breakpoint-up-xxxs) {
+      transform: translateX(calc(-50% + 20px));
+      width: calc(100% + 40px);
+    }
   }
 
   &__title {
@@ -134,6 +139,10 @@
 
     @media screen and (max-width: $breakpoint-up-md) {
       font-size: 26px;
+    }
+
+    @media screen and (max-width: $breakpoint-up-400) {
+      font-size: 6vw;
     }
 
     &--last {
@@ -150,6 +159,13 @@
         font-size: 24px;
         margin-top: -170px;
         margin-right: 250px;
+      }
+
+      @media screen and (max-width: $breakpoint-up-400) {
+        width: 190px;
+        font-size: 20px;
+        margin-top: -160px;
+        margin-right: 226px;
       }
     }
 
@@ -310,6 +326,10 @@
   @media screen and (max-width: $breakpoint-up-xxxs) {
     padding: 50px 10px 60px 0;
   }
+
+  @media screen and(max-height: 475px) {
+    padding: 20px 10px 20px 0;
+  }
 }
 
 .svg {
@@ -317,20 +337,26 @@
   height: 25px;
 
   &--telegram {
-    width: 21.83px;
-    height: 17.85px;
+    // width: 21.83px;
+    // height: 17.85px;
     margin-left: 1px;
+    width: 60%;
+    height: 60%;
   }
 
   &--twitter {
-    width: 23.5px;
-    height: 19.1px;
+    // width: 23.5px;
+    // height: 19.1px;
+    width: 70%;
+    height: 54%;
     margin-left: -2px;
   }
 
   &--facebook {
-    width: 13.2px;
-    height: 25.4px;
+    // width: 13.2px;
+    // height: 25.4px;
+    width: 60%;
+    height: 70%;
   }
 }
 
@@ -349,6 +375,16 @@
     border-radius: 50%;
     transition: fill $anim-time, background-color $anim-time;
     border: 2px solid #67899c;
+    cursor: pointer;
+
+    @media screen and(max-width: $breakpoint-up-xs) {
+      width: 32px;
+      height: 32px;
+    }
+
+    @media screen and(max-height: 475px) {
+      margin-bottom: 12px;
+    }
 
     &--first {
       &:hover {
@@ -381,9 +417,15 @@
   height: 180px;
   display: block;
 
+  @media screen and (max-width: $breakpoint-up-xs) {
+    width: 32px;
+    height: 155px;
+  }
+
   img {
     width: 100%;
     height: 100%;
+    cursor: pointer;
   }
 }
 
@@ -422,6 +464,10 @@
     @media screen and (max-width: $breakpoint-up-xxxs) {
       height: 160px;
     }
+
+    @media screen and (max-width: $breakpoint-up-400) {
+      height: 135px;
+    }
   }
 
   .subtitle {
@@ -435,8 +481,13 @@
     }
 
     @media screen and (max-width: $breakpoint-up-xs) {
-      font-size: 28px;
+      // font-size: 28px;
+      font-size: 7vw;
     }
+
+    // @media screen and (max-width: $breakpoint-up-400) {
+    //   font-size: 24px;
+    // }
   }
 }
 
@@ -498,21 +549,32 @@
   @media screen and (max-width: $breakpoint-up-xxxs) {
     font-size: 27px;
   }
+
+  @media screen and (max-width: $breakpoint-up-400) {
+    font-size: 6.4vw;
+  }
 }
 
 .list-wrapper {
   max-width: 714px;
 
   @media screen and (max-width: $breakpoint-up-md) {
-    // max-width: 750px;
     max-width: 100%;
   }
+
+  // @media screen and (max-width: $breakpoint-up-xs) {
+  //   max-width: 100%;
+  // }
 
   ol {
     counter-reset: section;
 
     @media screen and (max-width: $breakpoint-up-md) {
       padding-left: 40px;
+    }
+
+    @media screen and (max-width: $breakpoint-up-xs) {
+      padding-left: 30px;
     }
   }
 
@@ -526,6 +588,26 @@
 
         @media screen and (max-width: $breakpoint-up-md) {
           max-width: 370px;
+        }
+
+        @media screen and (max-width: $breakpoint-up-xs) {
+          max-width: 300px;
+        }
+
+        @media screen and (max-width: $breakpoint-up-xxs) {
+          max-width: 250px;
+        }
+
+        @media screen and (max-width: $breakpoint-up-xxxs) {
+          max-width: 220px;
+        }
+
+        @media screen and (max-width: $breakpoint-up-400) {
+          max-width: 180px;
+        }
+
+        @media screen and (max-width: 350px) {
+          max-width: 160px;
         }
       }
     }
@@ -541,7 +623,7 @@
       }
 
       @media screen and (max-width: $breakpoint-up-xs) {
-        font-size: 28px;
+        font-size: 4.2vw;
       }
 
       &:last-child {
@@ -560,6 +642,10 @@
 
         @media screen and (max-width: $breakpoint-up-md) {
           left: -40px;
+        }
+
+        @media screen and (max-width: $breakpoint-up-xs) {
+          left: -30px;
         }
       }
     }
@@ -1085,11 +1171,7 @@
     }
 
     @media screen and (max-width: $breakpoint-up-xs) {
-      font-size: 28px;
-    }
-
-    @media screen and (max-width: $breakpoint-up-xs) {
-      font-size: 24px;
+      font-size: 5vw;
     }
 
     &--bol {
@@ -1147,6 +1229,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      cursor: pointer;
 
       .line {
         width: 100%;
@@ -1221,8 +1304,16 @@
       margin-bottom: 30px;
     }
 
-    &:focus {
-      border: 5px solid #000;
+    @media screen and (max-width: $breakpoint-up-400) {
+      font-size: 6vw;
+    }
+
+    &:active {
+      background: linear-gradient(
+        90deg,
+        rgba(5, 33, 89, 1) 0%,
+        rgba(0, 133, 202, 1) 100%
+      );
     }
   }
 }
@@ -1263,6 +1354,7 @@
     justify-content: center;
     flex-shrink: 0;
     padding-left: 1px;
+    cursor: pointer;
     background: linear-gradient(
       90deg,
       rgba(5, 35, 95, 1) 0%,
@@ -1292,6 +1384,10 @@
     @media screen and (max-width: $breakpoint-up-xxs) {
       font-size: 24px;
     }
+
+    @media screen and (max-width: $breakpoint-up-xxxs) {
+      font-size: 5vw;
+    }
   }
 
   &__phone {
@@ -1310,6 +1406,10 @@
 
     @media screen and (max-width: $breakpoint-up-xs) {
       font-size: 38px;
+    }
+
+    @media screen and (max-width: $breakpoint-up-400) {
+      font-size: 9vw;
     }
 
     &:hover {
