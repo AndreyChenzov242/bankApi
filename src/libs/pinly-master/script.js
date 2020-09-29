@@ -49,8 +49,10 @@ $(".pinly-point").bind("paste", function (e) {
       .charAt(index - 100);
   }
 
-  let input = document.getElementById(
-    100 + parseInt(pastedData, 10).toString().length - 1
-  );
-  input.focus();
+  if (pastedData.length < 12) {
+    let input = document.getElementById(
+      100 + parseInt(pastedData, 10).toString().length - 1
+    );
+    input.focus();
+  } else document.getElementById(109).focus();
 });
