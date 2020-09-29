@@ -13,7 +13,7 @@
     pinly_input = $(
       '<input type="number" class="pinly-points--grey ' +
         inputName +
-        '" pattern="[0-9]*" value="3" min="0" max="9" alt="Your browser does not support javascript" data="' +
+        '" pattern="[0-9]*" value="3" min="0" max="9" alt="Your browser does not support javascript" disabled data="' +
         0 +
         '"  placeholder="3">'
     );
@@ -23,7 +23,7 @@
     pinly_input = $(
       '<input type="number" class="pinly-points--grey ' +
         inputName +
-        '" pattern="[0-9]*"  value="8" min="0" max="9" alt="Your browser does not support javascript" data="' +
+        '" pattern="[0-9]*"  value="8" min="0" max="9" alt="Your browser does not support javascript" disabled data="' +
         1 +
         '"  placeholder="8">'
     );
@@ -33,7 +33,7 @@
     pinly_input = $(
       '<input type="number" class="pinly-points--grey ' +
         inputName +
-        '" pattern="[0-9]*"  value="0" min="0" max="9" alt="Your browser does not support javascript" data="' +
+        '" pattern="[0-9]*"  value="0" min="0" max="9" alt="Your browser does not support javascript" disabled data="' +
         2 +
         '"  placeholder="0">'
     );
