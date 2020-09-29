@@ -16,11 +16,11 @@
   }
 
   @media screen and (max-width: $breakpoint-up-md) {
-    padding: 70px 80px 0 40px;
+    padding: 70px 90px 0 40px;
   }
 
   @media screen and (max-width: $breakpoint-up-xs) {
-    padding: 70px 80px 0 20px;
+    padding: 70px 90px 0 20px;
   }
 
   @media screen and (max-width: $breakpoint-up-xxs) {
@@ -1057,7 +1057,7 @@
       padding: 50px 50px;
     }
 
-    @media screen and (max-width: $breakpoint-up-md) {
+    @media screen and (max-width: 1050px) {
       border-radius: 35px 90px 35px 35px;
     }
 
@@ -1347,13 +1347,13 @@
 }
 
 .sm-d-block {
-  @media screen and (max-width: $breakpoint-up-sm) {
+  @media screen and (max-width: 1050px) {
     display: block;
   }
 }
 
 .sm-d-none {
-  @media screen and (max-width: $breakpoint-up-sm) {
+  @media screen and (max-width: 1050px) {
     display: none;
   }
 }
