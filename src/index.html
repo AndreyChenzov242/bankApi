@@ -31,7 +31,26 @@
         </div>
       </div>
 
-      <div class="section">
+      <div class="main-animation-container">
+        <div class="main-animation__title main-animation__title--first">
+          Ваше бухгалтерське ПЗ
+        </div>
+        <div class="main-animation__laptop" id="laptop"></div>
+        <div class="main-animation__line"></div>
+        <img class="money money--grn" src="./assets/img/grn.png" alt="grn" />
+        <img class="money money--dol" src="./assets/img/dol.png" alt="dol" />
+        <img class="money money--eur" src="./assets/img/eur.png" alt="eur" />
+        <div class="main-animation__gear">
+          <div class="gear__text">API</div>
+          <div class="gear__img"></div>
+        </div>
+        <div class="main-animation__server" id="server"></div>
+        <div class="main-animation__title main-animation__title--last">
+          Сервер Altbank
+        </div>
+      </div>
+
+      <div class="section section--what-u-can">
         <div class="list-wrapper">
           <div class="title list__title">
             <p>Через API від Altbank</p>
@@ -40,9 +59,8 @@
 
           <ol>
             <li class="list__item">
-              Надсилати до банку платіжні документи (UAH), створені
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              у вашій бухгалтерській програмі
+              Надсилати до банку платіжні документи (UAH), створені у вашій
+              бухгалтерській програмі
             </li>
             <li class="list__item">
               Отримувати баланс поточних рахунків у всіх валютах
@@ -62,110 +80,117 @@
         </div>
       </div>
 
-      <div class="main-animation-container">
-        <div class="main-animation__title main-animation__title--first">
-          Ваше бухгалтерське ПЗ
-        </div>
-        <div class="main-animation__laptop" id="laptop"></div>
-        <div class="main-animation__line"></div>
-        <img class="money money--grn" src="./assets/img/grn.png" alt="grn" />
-        <img class="money money--dol" src="./assets/img/dol.png" alt="dol" />
-        <img class="money money--eur" src="./assets/img/eur.png" alt="eur" />
-        <div class="main-animation__gear">
-          <div class="gear__text">API</div>
-          <div class="gear__img"></div>
-        </div>
-        <div class="main-animation__server" id="server"></div>
-        <div class="main-animation__title main-animation__title--last">
-          Сервер Altbank
-        </div>
-      </div>
-    </div>
-
-    <div class="section section--statement statement">
-      <div class="statement-wrapper">
-        <div class="deg">
-          <img src="./assets/img/deg.png" alt="deg" />
-        </div>
-        <div class="title">заява</div>
-        <form class="statement__form" action="#">
-          <div class="statement__label statement__label--bol mb-45">
-            на підключення інтерфейсу Client-Altbank API
+      <div class="section section--statement statement">
+        <div class="statement-wrapper">
+          <div class="deg">
+            <img
+              class="d-block sm-d-none"
+              src="./assets/img/angl-lg.PNG"
+              alt="angle"
+            />
+            <img
+              class="d-none sm-d-block"
+              src="./assets/img/andle-sm.PNG"
+              alt="angle"
+            />
           </div>
-          <input
-            type="text"
-            class="statement__input"
-            placeholder="Назва компанії"
-          />
-          <div class="statement__label-and-input-wrapper">
-            <div class="statement__label">Код за ЄДРПОУ</div>
-            <div class="pin-login"></div>
-          </div>
-          <div class="statement__label statement__label--bol mb-45" data="10">
-            Доступ до Client-Altbank API здійснюється з переліку визначених
-            ІР-адрес компанії за логіном і паролем, що будуть надіслані банком
-            на електронну адресу контактної особи компанії по роботі з API.
-          </div>
-          <div class="statement__label">
-            Перелік ІР-адрес для доступу до Client-Altbank API:
-          </div>
-          <div class="ip-wrapper">
-            <div class="input-and-plus-wrapper">
-              <div class="input-wrapper">
-                <input
-                  type="text"
-                  class="statement__input"
-                  id="main-input"
-                  placeholder="IPv4 або IPv6"
-                  data-action="text"
-                />
-                <div class="main-close">
-                  <div class="line"></div>
-                  <div class="line"></div>
-                </div>
-              </div>
-
-              <div class="add-ip ip-button">+</div>
+          <div class="title">заява</div>
+          <form class="statement__form" action="#">
+            <div class="statement__label statement__label--bol mb-45">
+              на підключення інтерфейсу Client-Altbank API
             </div>
-          </div>
-          <div class="statement__label mb-30">
-            Контактна особа з боку компанії по роботі з API:
-          </div>
-          <input
-            type="text"
-            class="statement__input mb-10"
-            placeholder="Прізвище, ім’я, по батькові"
-          />
-          <input
-            type="email"
-            class="statement__input"
-            placeholder="E-mail для передачі інформації по роботі з API"
-          />
+            <input
+              type="text"
+              class="statement__input"
+              placeholder="Назва компанії"
+            />
+            <div class="statement__label-and-input-wrapper sm-d-none">
+              <div class="statement__label">Код за ЄДРПОУ</div>
+              <div class="pin-login"></div>
+            </div>
+            <input
+              type="number"
+              class="statement__input sm-d-block d-none mt-20 mb-50"
+              placeholder="Код за ЄДРПОУ"
+            />
+            <div class="statement__label statement__label--bol mb-45" data="10">
+              Доступ до Client-Altbank API здійснюється з переліку визначених
+              ІР-адрес компанії за логіном і паролем, що будуть надіслані банком
+              на електронну адресу контактної особи компанії по роботі з API.
+            </div>
+            <div class="statement__label">
+              Перелік ІР-адрес для доступу до Client-Altbank API:
+            </div>
+            <div class="ip-wrapper">
+              <div class="input-and-plus-wrapper">
+                <div class="input-wrapper">
+                  <input
+                    type="text"
+                    class="statement__input"
+                    id="main-input"
+                    placeholder="IPv4 або IPv6"
+                    data-action="text"
+                  />
+                  <div class="main-close">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                  </div>
+                </div>
 
-          <div class="statement__label-and-phone-wrapper">
-            <div class="statement__label">Телефон</div>
-            <div class="pin-phone"></div>
-          </div>
+                <div class="add-ip ip-button">+</div>
+              </div>
+            </div>
+            <div class="statement__label mb-30">
+              Контактна особа з боку компанії по роботі з API:
+            </div>
+            <input
+              type="text"
+              class="statement__input mb-10"
+              placeholder="Прізвище, ім’я, по батькові"
+            />
+            <input
+              type="email"
+              class="statement__input sm-d-none"
+              placeholder="E-mail для передачі інформації по роботі з API"
+            />
+            <input
+              type="email"
+              class="statement__input sm-d-block d-none mt-10"
+              placeholder="Email"
+              id="as"
+            />
+            <input
+              type="number"
+              class="statement__input sm-d-block d-none mt-20 mb-60 xxxs-mb-40"
+              placeholder="Телефон"
+              id="as"
+            />
 
-          <input
-            type="submit"
-            class="statement__submit"
-            value="Зберегти в PDF"
-          />
-          <div class="statement__label statement__label--bol">
-            Заповнену заяву необхідно роздрукувати і надати до банку за підписом
-            та печаткою керівника компанії.
-          </div>
-        </form>
-      </div>
-      <footer class="footer">
-        <div class="footer__consult">Консультації за телефоном:</div>
-        <a href="tel:0800211111" class="footer__phone">0 800 211 111</a>
-        <div class="footer__cp">
-          © 2020 АТ «АЛЬТБАНК». Ліцензія НБУ №106 від 19.11.2018. Депозити,
-          кредити та інші види банківських послуг
+            <div class="statement__label-and-phone-wrapper sm-d-none">
+              <div class="statement__label">Телефон</div>
+              <div class="pin-phone"></div>
+            </div>
+
+            <input
+              type="submit"
+              class="statement__submit"
+              value="Зберегти в PDF"
+            />
+            <div class="statement__label statement__label--bol">
+              Заповнену заяву необхідно роздрукувати і надати до банку за
+              підписом та печаткою керівника компанії.
+            </div>
+          </form>
         </div>
-      </footer>
+        <footer class="footer">
+          <div class="footer__consult">Консультації за телефоном:</div>
+          <a href="tel:0800211111" class="footer__phone">0 800 211 111</a>
+          <div class="footer__cp">
+            © 2020 АТ «АЛЬТБАНК». Ліцензія НБУ №106 від 19.11.2018. Депозити,
+            кредити та інші види банківських послуг
+          </div>
+        </footer>
+      </div>
     </div>
 
     <aside class="social-and-logo">

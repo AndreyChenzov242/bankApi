@@ -56,7 +56,7 @@ function ShowScramble() {
 function ShowScrambleTmp() {
   setInterval(() => {
     ShowScramble();
-  }, 27000);
+  }, 25000);
 }
 
 ShowScramble();
