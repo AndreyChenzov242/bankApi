@@ -286,3 +286,21 @@ $(document).on("input", ".pinly-points", function () {
     }
   }
 });
+$(".pinly-points").keydown(function (event) {
+  if (event.which == 8 || event.which == 46) {
+    this.value = "";
+  }
+  if (event.which == 37) {
+    if (parseInt(this.id, 10) > 200) {
+      let input = document.getElementById(parseInt(this.id, 10) - 1);
+      input.focus();
+    }
+  }
+
+  if (event.which == 39) {
+    if (parseInt(this.id, 10) + 1 < 212) {
+      let input = document.getElementById(parseInt(this.id, 10) + 1);
+      input.focus();
+    }
+  }
+});

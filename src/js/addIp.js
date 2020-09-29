@@ -34,6 +34,8 @@ $(document).on("input", "#main-input", function () {
     }
 
     let input = document.querySelectorAll(".input-wrapper")[0].childNodes[1];
+
+    console.log(input);
     input.focus();
     input.selectionStart = input.value.length;
   }

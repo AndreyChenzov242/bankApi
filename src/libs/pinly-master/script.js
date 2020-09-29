@@ -455,3 +455,23 @@ $(document).on("input", ".pinly-point", function () {
     }
   }
 });
+
+$(".pinly-point").keydown(function (event) {
+  if (event.which == 8 || event.which == 46) {
+    this.value = "";
+  }
+
+  if (event.which == 37) {
+    if (parseInt(this.id, 10) > 100) {
+      let input = document.getElementById(parseInt(this.id, 10) - 1);
+      input.focus();
+    }
+  }
+
+  if (event.which == 39) {
+    if (parseInt(this.id, 10) + 1 < 110) {
+      let input = document.getElementById(parseInt(this.id, 10) + 1);
+      input.focus();
+    }
+  }
+});
